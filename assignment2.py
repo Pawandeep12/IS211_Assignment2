@@ -20,6 +20,7 @@ def processData(file_content):
     for line_num, line in enumerate(lines[1:], start=2):  # Skip header
         fields = line.split(',')
         try:
+            #hello
             person_id = int(fields[0])
             name = fields[1]
             birthday = datetime.datetime.strptime(fields[2], "%d/%m/%Y").date()
